@@ -10,7 +10,7 @@
   <meta property="og:title" content="Diffuman4D" />
   <meta property="og:description"
     content="Diffuman4D enables high-fidelity free-view rendering of human performances from sparse-view videos." />
-  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <meta property="og:url" content="https://diffuman4d.github.io/" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/images/pipeline.jpg" />
   <meta property="og:image:width" content="1920" />
@@ -38,15 +38,6 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
-  <link rel="preload" as="video" href="static/videos/teaser.mp4" type="video/mp4" crossorigin>
-  <link rel="preload" as="video" href="static/videos/interactive_demo_preview.mp4" type="video/mp4" crossorigin>
-  <link rel="preload" as="video" href="static/videos/overview/sparse_view_gs.mp4" type="video/mp4" crossorigin>
-  <link rel="preload" as="video" href="static/videos/overview/sparse_to_dense.mp4" type="video/mp4" crossorigin>
-  <link rel="preload" as="video" href="static/videos/overview/dense_view_gs.mp4" type="video/mp4" crossorigin>
-
-  <link rel="preload" as="video" href="static/videos/comparisons/dnar_0166_04.mp4" type="video/mp4" crossorigin
-    fetchpriority="low">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -197,7 +188,15 @@
         </div>
 
         <div class="video-wrapper">
-          <video id="overview-video" autoplay muted loop playsinline></video>
+          <video data-label="sparse_view_gs" preload="auto" autoplay muted loop playsinline
+            src="static/videos/overview/sparse_view_gs.mp4">
+          </video>
+          <video data-label="sparse_to_dense" preload="auto" autoplay muted loop playsinline hidden
+            src="static/videos/overview/sparse_to_dense.mp4">
+          </video>
+          <video data-label="dense_view_gs" preload="auto" autoplay muted loop playsinline hidden
+            src="static/videos/overview/dense_view_gs.mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -309,13 +308,7 @@
   <section class="section has-background-black has-text-white" id="section_bibtex">
     <div class="container is-max-desktop">
       <h2 class="title">BibTeX</h2>
-      <pre><code class="is-small">@article{gao2024cat3d,
-    title={CAT3D: Create Anything in 3D with Multi-View Diffusion Models},
-    author={Ruiqi Gao* and Aleksander Holynski* and Philipp Henzler and Arthur Brussee and Ricardo Martin-Brualla and Pratul P. Srinivasan and Jonathan T. Barron and Ben Poole*
-    },
-    journal={Advances in Neural Information Processing Systems},
-    year={2024}
-}</code></pre>
+      <pre><code class="is-small">Todo</code></pre>
     </div>
   </section>
 
@@ -333,24 +326,29 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const pills = document.querySelectorAll('.title-pill');
-      const video = document.getElementById('overview-video');
-      const DEFAULT_LABEL = 'sparse_view_gs';
+      const videos = document.querySelectorAll('.overview-pills .video-wrapper video');
+      const DEFAULT = 'sparse_view_gs';
 
-      function loadVideo(label) {
-        video.pause();
-        video.src = `static/videos/overview/${label}.mp4`;
-        video.load();
+      function showVideo(label) {
+        videos.forEach(v => {
+          const active = v.dataset.label === label;
+          v.hidden = !active;
+          if (active) {
+            v.currentTime = 0;
+            v.play();
+          } else {
+            v.pause();
+          }
+        });
       }
 
-      video.addEventListener('loadeddata', () => video.play());
-
-      pills.forEach(p => p.addEventListener('click', () => {
-        if (p.classList.contains('active')) return;
-        pills.forEach(el => el.classList.toggle('active', el === p));
-        loadVideo(p.dataset.label);
+      pills.forEach(pill => pill.addEventListener('click', () => {
+        if (pill.classList.contains('active')) return;
+        pills.forEach(el => el.classList.toggle('active', el === pill));
+        showVideo(pill.dataset.label);
       }));
 
-      loadVideo(DEFAULT_LABEL);
+      showVideo(DEFAULT);
     });
   </script>
 
