@@ -5,20 +5,23 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta name="description"
+    content="Diffuman4D enables high-fidelity free-view rendering of human performances from sparse-view videos.">
+  <meta property="og:title" content="Diffuman4D" />
+  <meta property="og:description"
+    content="Diffuman4D enables high-fidelity free-view rendering of human performances from sparse-view videos." />
   <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image" content="static/images/pipeline.jpg" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="823" />
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="Diffuman4D">
+  <meta name="twitter:description"
+    content="Diffuman4D enables high-fidelity free-view rendering of human performances from sparse-view videos.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:image" content="static/images/pipeline.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
@@ -35,6 +38,15 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+
+  <link rel="preload" as="video" href="static/videos/teaser.mp4" type="video/mp4" crossorigin>
+  <link rel="preload" as="video" href="static/videos/interactive_demo_preview.mp4" type="video/mp4" crossorigin>
+  <link rel="preload" as="video" href="static/videos/overview/sparse_view_gs.mp4" type="video/mp4" crossorigin>
+  <link rel="preload" as="video" href="static/videos/overview/sparse_to_dense.mp4" type="video/mp4" crossorigin>
+  <link rel="preload" as="video" href="static/videos/overview/dense_view_gs.mp4" type="video/mp4" crossorigin>
+
+  <link rel="preload" as="video" href="static/videos/comparisons/dnar_0166_04.mp4" type="video/mp4" crossorigin
+    fetchpriority="low">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -92,6 +104,7 @@
           <div class="column">
             <div class="publication-links">
               <span class="link-block">
+                <!-- ? Todo -->
                 <a href="https://arxiv.org/abs/ARXIV PAPER ID" target="_blank"
                   class="external-link button is-normal is-rounded is-light">
                   <span class="icon"><i class="fas fa-file-pdf"></i></span>
@@ -99,14 +112,14 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                <a href="https://github.com/zju3dv/Diffuman4D" target="_blank"
                   class="external-link button is-normal is-rounded is-light">
                   <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                <a href="https://diffuman4d.github.io/" target="_blank"
                   class="external-link button is-normal is-rounded is-light">
                   <span class="icon"><i class="fas fa-database"></i></span>
                   <span>Dataset</span>
