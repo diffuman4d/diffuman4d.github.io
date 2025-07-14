@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Diffuman4D</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+  <!-- > Hero -->
+  <section class="section has-background-black has-text-white" id="section_hero">
+    <div class="container is-max-desktop has-text-centered">
+      <!-- > Title -->
+      <div class="columns is-centered">
+        <div class="column">
+          <h1 class="title publication-title">
+            <span><img src="static/images/logo.png" alt="Diffuman4D" style="width:2.6rem"></span>
+            <span class="gradient-headline">Diffuman4D</span><span class="pub-colon">:</span>
+            <span class="pub-subtitle">4D Consistent Human View Synthesis from Sparse-View Videos with
+              Spatio-Temporal Diffusion Models</span>
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
+            <span class="author-block">
+              <a href="https://github.com/krahets" target="_blank">Yudong Jin<sup>&nbsp;1</sup></a></span>
+            <span class="author-block">
+              <a href="https://pengsida.net/" target="_blank">Sida Peng<sup>&nbsp;1</sup></a></span>
+            <span class="author-block">
+              <a href="https://xuanwangvc.github.io/" target="_blank">Xuan Wang<sup>&nbsp;2</sup></a></span>
+            <span class="author-block">
+              <a href="https://github.com/xbillowy" target="_blank">Tao Xie<sup>&nbsp;1</sup></a></span>
+            <span class="author-block">
+              <a href="https://zhenx.me/" target="_blank">Zhen Xu<sup>&nbsp;1</sup></a></span>
+            <span class="author-block">
+              <a href="https://github.com/yangyifan18" target="_blank">Yifan Yang<sup>&nbsp;1</sup></a></span>
+            <span class="author-block">
+              <a href="https://shenyujun.github.io/" target="_blank">Yujun Shen<sup>&nbsp;2</sup></a></span>
+            <span class="author-block">
+              <a href="http://www.cad.zju.edu.cn/home/bao/" target="_blank">Hujun Bao<sup>&nbsp;1</sup></a></span>
+            <span class="author-block">
+              <a href="https://xzhou.me/" target="_blank">Xiaowei Zhou<sup>&nbsp;1†</sup></a></span>
+          </div>
+          <!-- Authors affiliation -->
+          <div class="publication-authors">
+            <div class="is-size-5">
+              <span class="author-block"><sup>1&nbsp;</sup>Zhejiang University</span>
+              <span class="author-block"><sup>2&nbsp;</sup>Ant Research</span>
+            </div>
+            <div class="is-size-6"><span class="author-block"><sup>†&nbsp;</sup>Corresponding Author</span></div>
+          </div>
+          <!-- Conference -->
+          <div class="is-size-5 publication-conference">ICCV 2025</div>
+          <!-- Links -->
+          <div class="column">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/ARXIV PAPER ID" target="_blank"
+                  class="external-link button is-normal is-rounded is-light">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                  class="external-link button is-normal is-rounded is-light">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                  class="external-link button is-normal is-rounded is-light">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- > Teaser video-->
+      <div class="publication-video">
+        <video poster="" id="teaser" controls loop muted playsinline autoplay height="100%">
+          <source src="static/videos/teaser.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="content">
+        <p>Diffuman4D enables high-fidelity free-view rendering of human performances from sparse-view videos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- > Interactive demo -->
+  <section class="section has-background-black has-text-white" id="section_interactive_demo" style="margin-top: 3rem;">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title">Interactive Demo</h2>
+      <div class="demo-video-wrapper">
+        <a href="https://www.4dv.ai/viewer/diffuman4d_fdvai_dance_colored?showdemo=diffuman4d" target="_blank">
+          <div class="publication-video">
+            <video poster="" autoplay muted loop playsinline height="100%">
+              <source src="static/videos/interactive_demo_preview.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Button overlay -->
+          <div class="button is-normal is-rounded is-light">
+            <span style="margin-right: 0.3rem;"><i class="far fa-play-circle"></i></span>
+            <span>Watch Now</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="content">
+        <p>The 4DGS model on the <span class="text-purple">left</span> (<span class="text-blue">right</span>) is
+          reconstructed from <span class="text-purple">sparse input videos</span> (<span class="text-blue">input videos
+            + generated videos</span>).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- > Overview -->
+  <section class="section has-background-black has-text-white" id="section_overview">
+    <div class="container is-max-desktop has-text-left">
+      <h2 class="title has-text-centered">Overview</h2>
+      <div id="video-text-switcher" class="overview-pills">
+        <div>
+          <h2 class="subtitle">How it works</h2>
+          <div class="content">
+            <p>
+              Given sparse-view videos, Diffuman4D (1) generates 4D-consistent multi-view videos conditioned on these
+              inputs, and (2) reconstructs a high-fidelity 4DGS model of the human performance using both the input and
+              the generated videos.
+            </p>
+          </div>
+          <h2 class="subtitle">Motivation and Solution</h2>
+          <ul class="title-list">
+            <li class="title-pill active" data-label="sparse_view_gs"><span style="font-weight: bold;">1.</span>
+              Sparse-view input videos inevitably lead to noisy 4DGS reconstructions.</li>
+            <li class="title-pill" data-label="sparse_to_dense"><span style="font-weight: bold;">2.</span>
+              Diffuman4D addresses the sparse-view challenge by generating 4D-consistent multi-view videos conditioned
+              on the input videos.</li>
+            <li class="title-pill" data-label="dense_view_gs"><span style="font-weight: bold;">3.</span> The
+              generated videos enable high-quality 4DGS reconstructions, allowing free view rendering of humans in
+              motion.</li>
+          </ul>
+        </div>
+
+        <div class="video-wrapper">
+          <video id="overview-video" autoplay muted loop playsinline></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- > Method -->
+  <section class="section has-background-black has-text-white" id="section_method">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title">Method</h2>
+      <div class="content has-text-left">
+        <p>We introduce a spatio-temporal diffusion model to tackle the challenge of human novel view synthesis from
+          sparse-view videos by:</p>
+        <ol>
+          <li><b>Skeleton-Plücker conditioning:</b> The encoded skeleton latents and Plücker coordinates are
+            concatenated with the image latents at input views or the noise latents at target views, forming input
+            samples or target samples, respectively.</li>
+          <li><b>Sliding iterative denoising:</b> The samples across all views and timestamps form a sample grid, which
+            is denoised by our model using a sliding iterative mechanism and then decoded into the target videos.</li>
+          <li><b>4DGS reconstruction:</b> A 4DGS model is reconstructed from the input and target videos using
+            LongVolcap, enabling real-time novel view rendering of human performances with complex clothing and motions.
+          </li>
+        </ol>
+      </div>
+      <div class="figure-container">
+        <img src="static/images/pipeline.jpg" alt="Diffuman4D pipeline">
+      </div>
+    </div>
+  </section>
+
+  <!-- > Comparisons -->
+  <section class="section has-background-black has-text-white" id="section_comparisons">
+    <div class="container is-max-desktop has-text-centered" id="comparisons">
+      <h2 class="title">Comparisons</h2>
+      <div class="comparisons-video-wrapper">
+        <video id="comparisons-video" width="100%" controls autoplay muted loop playsinline></video>
+      </div>
+
+      <div class="scene-pills" id="comparisons-pills" role="group" aria-relevant="additions text">
+        <div class="scene-pill" data-value="dnar_0007_04">
+          <img class="card-img" src="static/images/comparisons/dnar_0007_04.webp">
+        </div>
+        <div class="pill scene-pill" data-value="dnar_0021_05">
+          <img class="card-img" src="static/images/comparisons/dnar_0021_05.webp">
+        </div>
+        <div class="pill scene-pill" data-value="dnar_0024_05">
+          <img class="card-img" src="static/images/comparisons/dnar_0024_05.webp">
+        </div>
+        <div class="pill scene-pill active" data-value="dnar_0166_04">
+          <img class="card-img" src="static/images/comparisons/dnar_0166_04.webp">
+        </div>
+        <div class="pill scene-pill" data-value="dnar_0172_05">
+          <img class="card-img" src="static/images/comparisons/dnar_0172_05.webp">
+        </div>
+        <div class="pill scene-pill" data-value="dnar_0230_03">
+          <img class="card-img" src="static/images/comparisons/dnar_0230_03.webp">
+        </div>
+        <div class="pill scene-pill" data-value="dnar_0410_05">
+          <img class="card-img" src="static/images/comparisons/dnar_0410_05.webp">
+        </div>
+        <div class="pill scene-pill" data-value="dnar_0592_01">
+          <img class="card-img" src="static/images/comparisons/dnar_0592_01.webp">
+        </div>
+        <div class="pill scene-pill" data-value="dnar_0623_01">
+          <img class="card-img" src="static/images/comparisons/dnar_0623_01.webp">
+        </div>
+        <div class="pill scene-pill" data-value="dnar_0700_06">
+          <img class="card-img" src="static/images/comparisons/dnar_0700_06.webp">
+        </div>
+        <div class="pill scene-pill" data-value="dnar_0718_06">
+          <img class="card-img" src="static/images/comparisons/dnar_0718_06.webp">
+        </div>
+        <div class="pill scene-pill" data-value="dnar_0811_06">
+          <img class="card-img" src="static/images/comparisons/dnar_0811_06.webp">
+        </div>
+        <div class="pill scene-pill" data-value="actor0001_seq02">
+          <img class="card-img" src="static/images/comparisons/actor0001_seq02.webp">
+        </div>
+        <div class="pill scene-pill" data-value="actor0002_seq02">
+          <img class="card-img" src="static/images/comparisons/actor0002_seq02.webp">
+        </div>
+        <div class="pill scene-pill" data-value="actor0003_seq01">
+          <img class="card-img" src="static/images/comparisons/actor0003_seq01.webp">
+        </div>
+        <div class="pill scene-pill" data-value="actor0004_seq02">
+          <img class="card-img" src="static/images/comparisons/actor0004_seq02.webp">
+        </div>
+        <div class="pill scene-pill" data-value="actor0005_seq02">
+          <img class="card-img" src="static/images/comparisons/actor0005_seq02.webp">
+        </div>
+        <div class="pill scene-pill" data-value="actor0008_seq01">
+          <img class="card-img" src="static/images/comparisons/actor0008_seq01.webp">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- > Acknowledgments -->
+  <section class="section has-background-black has-text-white" id="section_acknowledgments">
+    <div class="container is-max-desktop">
+      <h2 class="title">Acknowledgments</h2>
+      <p>We would like to thank Haotong Lin, Jiaming Sun, Ye Zhang, and Zhiyuan Yu for their valuable contributions. We
+        appreciate the support from Yifan Wang, Yu Zhang, Siyu Zhang, Yinji Shentu, and Dongli Tan in producing the
+        self-captured demos. We also extend our gratitude to Kecheng Zheng and Jialiang Zheng for their help with
+        the training clusters.</p>
+    </div>
+  </section>
+
+  <!-- > BibTex citation -->
+  <section class="section has-background-black has-text-white" id="section_bibtex">
+    <div class="container is-max-desktop">
+      <h2 class="title">BibTeX</h2>
+      <pre><code class="is-small">@article{gao2024cat3d,
+    title={CAT3D: Create Anything in 3D with Multi-View Diffusion Models},
+    author={Ruiqi Gao* and Aleksander Holynski* and Philipp Henzler and Arthur Brussee and Ricardo Martin-Brualla and Pratul P. Srinivasan and Jonathan T. Barron and Ben Poole*
+    },
+    journal={Advances in Neural Information Processing Systems},
+    year={2024}
+}</code></pre>
+    </div>
+  </section>
+
+  <!-- > Footer -->
+  <footer class="footer has-background-black has-text-white">
+    <div class="container is-max-desktop" style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #1C1C1E;">
+      <p>This page was built using <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+          target="_blank">Academic Project Page Template</a>. The website's design was inspired by <a
+          href="https://cat-4d.github.io/" target="_blank">CAT4D</a> and <a href="https://cat3d.github.io/"
+          target="_blank">CAT3D</a>.</p>
+    </div>
+  </footer>
+
+  <!-- > Overview video switcher -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const pills = document.querySelectorAll('.title-pill');
+      const video = document.getElementById('overview-video');
+      const DEFAULT_LABEL = 'sparse_view_gs';
+
+      function loadVideo(label) {
+        video.pause();
+        video.src = `static/videos/overview/${label}.mp4`;
+        video.load();
+      }
+
+      video.addEventListener('loadeddata', () => video.play());
+
+      pills.forEach(p => p.addEventListener('click', () => {
+        if (p.classList.contains('active')) return;
+        pills.forEach(el => el.classList.toggle('active', el === p));
+        loadVideo(p.dataset.label);
+      }));
+
+      loadVideo(DEFAULT_LABEL);
+    });
+  </script>
+
+  <!-- > Comparisons video switcher -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const compareDiv = document.querySelector('#comparisons');
+      const pills = compareDiv.querySelectorAll('.scene-pill');
+      const v = document.getElementById('comparisons-video');
+      const default_scene = 'dnar_0166_04';
+
+      function loadScene(label) {
+        v.src = `static/videos/comparisons/${label}.mp4`;
+        v.load();
+      }
+
+      v.addEventListener('loadeddata', () => v.play());
+
+      pills.forEach(p => p.addEventListener('click', () => {
+        pills.forEach(el => el.classList.toggle('active', el === p));
+        loadScene(p.dataset.value);
+      }));
+
+      loadScene(default_scene);
+    });
+  </script>
+
+</body>
+
+</html>
