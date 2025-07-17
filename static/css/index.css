@@ -57,6 +57,10 @@ body {
   .publication-title .pub-colon {
     display: none;
   }
+
+  .link-block {
+    margin: 0.5rem 0rem;
+  }
 }
 
 /* gradient headline */
@@ -75,6 +79,7 @@ body {
 
   background-size: 200% 100%;
   animation: slide 8s ease-in-out infinite alternate;
+  font-weight: bold;
 }
 
 @keyframes slide {
@@ -213,6 +218,11 @@ a:hover .publication-video {
   opacity: 1;
 }
 
+.text-red {
+  color: #F4A5A8 !important;
+  font-weight: bold;
+}
+
 .text-purple {
   color: #C5CEF2 !important;
   font-weight: bold;
@@ -220,6 +230,11 @@ a:hover .publication-video {
 
 .text-blue {
   color: #8CC9F3 !important;
+  font-weight: bold;
+}
+
+.text-teal {
+  color: #97D6D0 !important;
   font-weight: bold;
 }
 
@@ -283,8 +298,8 @@ a:hover .publication-video {
   cursor: pointer;
   width: 9rem;
   height: 9rem;
-  border-radius: 8px;
   border: 1px solid var(--dark-border);
+  border-radius: 8px;
   margin: 0.3rem;
   display: inline-block;
   transition: border-color 0.3s ease, background-color 0.3s ease;
@@ -346,8 +361,10 @@ a:hover .publication-video {
   }
 
   .scene-pill {
-    width: 72px;
-    height: 72px;
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 4px;
+    margin: 0.1rem;
   }
 }
 
