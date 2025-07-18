@@ -146,16 +146,20 @@ body {
 .publication-video {
   position: relative;
   width: 100%;
-  height: 0;
   padding-bottom: 56.25%;
-
   overflow: hidden;
   border-radius: 16px;
 }
 
 .publication-video video {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: inherit;
+  display: block;
 }
 
 /* override Bulma button */
@@ -174,22 +178,17 @@ body {
 }
 
 /* > Interactive demo */
-.publication-video {
-  display: inline-block;
-  transition: filter 0.5s ease;
-}
-
-a:hover .publication-video {
-  filter: brightness(0.5);
-}
-
 .demo-video-wrapper {
+  display: block;
   position: relative;
-  display: inline-block;
 }
 
 .demo-video-wrapper video {
-  display: block;
+  transition: filter 0.5s ease;
+}
+
+.demo-video-wrapper a:hover video {
+  filter: brightness(0.5);
 }
 
 /* watch-now button */
