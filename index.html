@@ -225,6 +225,29 @@
     </div>
   </section>
 
+  <!-- > Dataset -->
+  <section class="section has-background-black has-text-white" id="section_dataset">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title">Dataset</h2>
+      <div class="content has-text-left">
+        <p>To enable model training, we meticulously process the <a href="https://dna-rendering.github.io/index.html"
+            target="_blank">DNA-Rendering dataset</a> by recalibrating camera parameters, optimizing image color
+          correction matrices (CCMs), predicting foreground masks, and estimating human skeletons.</p>
+        <p>To promote future research in the field of human-centric 3D/4D generation, we have open-sourced our
+          re-annotated labels for the DNA-Rendering dataset in <a
+            href="https://huggingface.co/datasets/krahets/dna_rendering_processed"
+            target="_blank">dna_rendering_processed</a>, which includes 1000+ human multi-view video sequences. Each
+          sequence contains 48 cameras, 225 (or 150) frames, totaling 10 million images.</p>
+      </div>
+      <!-- > Dataset video-->
+      <div class="publication-video">
+        <video poster="" id="dataset" controls loop muted playsinline autoplay>
+          <source src="static/videos/dna_rendering_processed.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
   <!-- > Comparisons -->
   <section class="section has-background-black has-text-white" id="section_comparisons">
     <div class="container is-max-desktop has-text-centered" id="comparisons">
